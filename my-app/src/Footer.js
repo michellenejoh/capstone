@@ -1,6 +1,9 @@
-return (
+import React from 'react';
+
+function Footer () {
+    return (
     <footer>
-        <img/>\\
+        <img/>
          <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -26,4 +29,7 @@ return (
             </ul>
          </section>
     </footer>
-)
+    );
+}
+
+export default Footer;

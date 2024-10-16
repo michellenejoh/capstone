@@ -1,4 +1,7 @@
-return (
+import React from 'react';
+
+function Nav () {
+    return (
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -9,4 +12,7 @@ return (
             <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
-)
+    );
+}
+
+export default Nav;
