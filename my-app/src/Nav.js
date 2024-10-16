@@ -1,9 +1,10 @@
 import React from 'react';
+import './styles.css';
 
 function Nav () {
     return (
     <nav>
-        <ul>
+        <ul className="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>

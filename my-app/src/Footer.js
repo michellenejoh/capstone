@@ -4,7 +4,8 @@ function Footer () {
     return (
     <footer>
         <img/>
-         <nav>
+         <nav className="foot">
+            <h5>Navigation</h5>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -14,14 +15,16 @@ function Footer () {
             <li><a href="login.html">Login</a></li>
         </ul>
          </nav>
-        <section>
+        <section className='details'>
+            <h5>Contact</h5>
             <ul>
                 <li>Address</li>
                 <li>Phone number</li>
                 <li>Email</li>
             </ul>
         </section>
-        <section aria-label="Social Media Links">
+        <section  className="links">
+            <h5>Social Media Links</h5>
             <ul>
                     <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
                     <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
