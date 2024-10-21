@@ -1,40 +1,182 @@
 
-header, .nav {
+header, .navigation {
     display: flex;
     flex-flow: row wrap;
-    align-items: center; /* Vertically center items */
-    justify-content: stretch; /* Space between logo and nav */
-    padding: 20px; /* Optional: Adds padding */
-    width: 100%;
+    align-items: center;
+    justify-content: stretch;
 }
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 25px;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
+.navigation a:hover {
+    color: #495E57;
+    transform: scale(1.05);
+}
+
 header img {
     margin-left: 50px;
 }
-.nav li {
-    list-style-type: none;
-    margin: 0 30px;
-}
-.nav a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none; /* Remove underline from links */
-    padding: 10px 15px; /* Optional: Adds padding to links */
-    color: black;
+
+.call-to-action {
+    background-color: #495E57;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-footer{
+.call-to-action img {
+    margin-right: 115px;
+    height: 500px;
+    width: auto;
+    margin-left: 30px;
+}
+
+  .call-to-action div {
+    flex: 1;
+    margin-left: 80px;
+}
+
+.call-to-action h1 {
+    margin-top: 50px;
+    font-family: 'Markazi Text', serif;
+    font-size: 64px;
+    color: #F4CE14;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.call-to-action button {
+    background-color: #F4CE14;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+.call-to-action p:nth-child(2) {
+    margin-top: 5px;
+    font-family: 'Markazi Text', serif;
+    font-size: 40px;
+    color: #Ffffff;
+    font-weight: 400;
+}
+
+.call-to-action p:nth-child(3) {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: #Ffffff;
+}
+.bg, .testimonials {
+    background-color: #EDEFEE;
+}
+.specials h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 60px;
+    margin-left: 30px;
+}
+
+.specials p:nth-of-type(1) {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: #495E57;
+}
+
+.specials p:nth-of-type(2) {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.specials button {
+    background-color: #000000;
+    color: #Ffffff;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 115px;;
+    margin-left: 80px;
+}
+
+.specials ul, .specials .action {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.specials div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+}
+
+.special-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.specials p strong{
+   font-size: 16px;
+   font-family: 'Karla', sans-serif;
+   font-weight: 700;
+   color: #EE9972;
+}
+
+.price {
+    gap: 2px;
+}
+
+.testimonials ul{
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Align items to the start */
+    align-items: center;
     justify-content: space-between;
     margin: 50px;
 }
 
-.foot, .details, .links {
-    flex: 1;
+.testimonials h2 {
+    text-align: center;
 }
 
-footer ul, footer a {
+footer {
+    display: flex;
+    background-color: #D9D9D9;
+}
+.chicago {
+    margin-left: 50px;
+}
+
+footer nav, footer section {
+    flex: 1;
+    margin-left: 50px;
+}
+
+footer a{
     list-style-type: none;
     color: black;
     text-decoration: none;
