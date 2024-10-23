@@ -7,7 +7,7 @@ function Specials() {
   const specials = [
     { id: 1, name: 'Greek salad', price: '$12', description: 'The famous greek salad', image: greekSalad},
     { id: 2, name: 'Bruchetta', price: '$10', description: 'Grilled bread with garlic', image: bruchetta},
-    { id: 3, name: 'Lemon Dessert', price: '$15', description: 'Straight from grandma', image: lemonDessert}
+    { id: 3, name: 'Lemon dessert', price: '$15', description: 'Straight from grandma', image: lemonDessert}
   ];
 
   return (

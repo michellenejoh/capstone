@@ -147,9 +147,6 @@ header img {
    color: #EE9972;
 }
 
-.price {
-    gap: 2px;
-}
 
 .testimonials ul{
     display: flex;
@@ -167,8 +164,15 @@ footer {
     display: flex;
     background-color: #D9D9D9;
 }
+
 .chicago {
     margin-left: 50px;
+}
+
+form {
+    display: grid ;
+    width: 200px;
+    gap: 20px;
 }
 
 footer nav, footer section {
