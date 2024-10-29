@@ -1,14 +1,13 @@
 import React from 'react';
 import BookingForm from './BookingForm';
 
-function BookingPage({ formData, onChange, onSubmit, availableTimes, dispatch }) {
+function BookingPage({ formData, onChange, availableTimes, dispatch }) {
     return (
-        <div>
+        <div className='bookingpage'>
             <h1>Booking Page</h1>
             <BookingForm
                 formData={formData}
                 onChange={onChange}
-                onSubmit={onSubmit}
                 dispatch={dispatch}
                 availableTimes={availableTimes}
             />

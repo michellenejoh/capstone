@@ -1,9 +1,10 @@
 import React from 'react';
+import logo from './Logo.png';
 
 function Footer () {
     return (
     <footer>
-        <img/>
+        <img src={logo} alt="little lemon logo"/>
          <nav className="foot">
             <h5>Navigation</h5>
         <ul>

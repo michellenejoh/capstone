@@ -65,7 +65,12 @@ header img {
     font-family: 'Karla', sans-serif;
     font-size: 18px;
     font-weight: 700;
-  }
+}
+
+.call-to-action button:hover {
+    background-color: #333333;
+    color: #EDEFEE;
+}
 
 .call-to-action p:nth-child(2) {
     margin-top: 5px;
@@ -105,7 +110,7 @@ header img {
 
 .specials button {
     background-color: #000000;
-    color: #Ffffff;
+    color: #EDEFEE;
     padding: 10px 20px;
     border-radius: 16px;
     cursor: pointer;
@@ -114,6 +119,10 @@ header img {
     font-weight: 700;
     margin-right: 115px;;
     margin-left: 80px;
+}
+
+.specials button:hover {
+    background-color: #333333;
 }
 
 .specials ul, .specials .action {
@@ -147,46 +156,218 @@ header img {
    color: #EE9972;
 }
 
-
-.testimonials ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 50px;
+.testimonials {
+    padding: 20px;
+    background-color: #f8f8f8;
 }
 
 .testimonials h2 {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonials ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Style for each testimonial item */
+.testimonials li {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stack testimonials vertically on smaller screens */
+@media (max-width: 768px) {
+    .testimonials ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials li {
+        margin: 15px 0;
+    }
+}
+.testimonials {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 36px;
+}
+
+.testimonials p {
+    font-family: 'Karla', sans-serif;
+}
+
+.testimonials ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Style for each testimonial item */
+.testimonials li {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Stack testimonials vertically on smaller screens */
+@media (max-width: 768px) {
+    .testimonials ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials li {
+        margin: 15px 0;
+    }
 }
 
 footer {
     display: flex;
-    background-color: #D9D9D9;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
 }
+
+/* Style for each section within the footer */
+footer img, footer .foot, footer .details, footer .links {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Ensures that the footer elements are stacked vertically on smaller screens */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img, footer .foot, footer .details, footer .links {
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
 
 .chicago {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-left: 50px;
 }
 
-form {
-    display: grid ;
-    width: 200px;
-    gap: 20px;
+@media (max-width: 768px) {
+    .chicago {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
 }
 
-footer nav, footer section {
-    flex: 1;
+.chicago img {
+    max-width: 50%;
+}
+
+.bookingpage h1 {
+    text-align: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 32px;
+}
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    margin-bottom: 40px;
+}
+
+.booking-form label {
+    margin-bottom: 15px;
+    font-family: 'Karla', sans-serif;
+}
+
+.booking-form input,
+.booking-form select {
+    border: 1px solid #ccc;
+    max-width: 400px; /* Set a maximum width if desired */
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+.booking-form input.invalid {
+    border-color: red; /* Red border for invalid date */
+}
+
+.booking-form button {
+    background-color: #F4CE14;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+}
+
+.booking-form button:hover {
+    background-color: #495E57;
+    color: #EDEFEE;
+}
+
+.booking-form button:disabled {
+    background-color: #ccc; /* Light grey background for disabled state */
+    color: #666; /* Dark grey text color for disabled state */
+    cursor: not-allowed; /* Change cursor to indicate it’s not clickable */
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer nav, .details, .links {
     margin-left: 50px;
 }
-
-footer a{
+footer img {
+    height: 50px;
+    margin-top: 70px;
+}
+footer li  {
+    font-family: 'Karla', sans-serif;
+}
+footer ul {
     list-style-type: none;
+}
+footer a{
     color: black;
     text-decoration: none;
     align-items: flex-start;
     padding: 0px;
 }
 footer h5 {
+    font-family: 'Karla', sans-serif;
     color: #495E57;
 }
