@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './Logo.png';
+import { Link } from 'react-router-dom';
 
 function Footer () {
     return (
@@ -8,12 +9,12 @@ function Footer () {
          <nav className="foot">
             <h5>Navigation</h5>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="order.html">Order Online</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/specials">Menu</Link></li>
+            <li><Link to="/reserve">Reservations</Link></li>
+            <li><Link to="/testimonials">Reviews</Link></li>
+            <li><Link to="/hero">Hero section</Link></li>
         </ul>
          </nav>
         <section className='details'>
